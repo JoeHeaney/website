@@ -1,11 +1,9 @@
 {
-  "name": "java-projects",
+  "name": "website",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000m\u0000y\u0000w\u0000e\u0000b\u0000s\u0000i\u0000t\u0000e\u0000\r\u0000 \u0000#\u0000 \u0000w\u0000e\u0000b\u0000s\u0000i\u0000t\u0000e\u0000\r\u0000 \u0000",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel website/index.html",
-    "build": "parcel build website/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
