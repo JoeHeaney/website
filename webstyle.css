@@ -1,0 +1,620 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+html{
+    scroll-behavior: smooth;
+  }
+  /*Navbar Section*/
+  .navbar{
+    background: linear-gradient(to right, rgb(63, 63, 63), grey, rgb(63, 63, 63));
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar__container{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: .75s ease;
+    margin-right: 10px;
+}
+
+
+.navbar__links:hover{
+    color: #ffc910;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px){
+    .navbar__container{
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+    .navbar__menu.active{
+        background: grey;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+    #navbar__logo{
+        padding-left: 25px;
+    }
+    .navbar__toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: white;
+    }
+
+    .navbar__item{
+        width: 100%;
+    }
+
+    .navbar__links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .navbar__btn{
+        padding-bottom: 2rem;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .navbar__toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+}
+  /*Hero Section*/
+  .hero__section {
+    background-image: url(https://cdn.nimbusthemes.com/2017/09/09233341/Free-Nature-Backgrounds-Seaport-During-Daytime-by-Pexels.jpeg);
+    background-size: cover;
+    padding: 0 60px;
+    color: white;
+  }
+  
+  .hero__wrapper {
+    display: grid;
+    grid-template-rows: 910px;
+  }
+  
+  .column__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .column__left span{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    margin-bottom: 1rem;
+  }
+  
+  .column__left h1 {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .column__left p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+  }
+  
+  .hero__links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .hero__links i {
+    margin-right: 40px;
+    color: white;
+    transition: .75s ease;
+  }
+
+  .hero__links i:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffc910;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+  }
+  
+  /* Media Queries */
+@media screen and (max-width: 1100px) {
+    .hero__section {
+      padding: 30px;
+    }
+  
+    .hero__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    .hero__wrapper {
+      grid-template-rows: 600px;
+    }
+  
+    .column__left h1 {
+      font-size: 32px;
+    }
+  }
+
+  /* About Section */
+.main__section {
+    padding: 60px 60px;
+    background: rgb(46, 46, 46);
+    color: #fff;
+    
+  }
+  
+  .main__container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main__container h1 {
+    display: flex;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 25px;
+  }
+  .main__container h4 {
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .skills__text p{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .main__container li{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .main__text {
+    padding-right: 20px;
+  }
+  
+  .main__text h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .main__text p {
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .main__image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main__img {
+    width: 420px;
+    height: 610px;
+  }
+  
+  .skills__text{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    column-gap: 150px;
+    grid-template-rows: 640px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .skills__list{
+    list-style: none;
+  }
+  .skills__list li{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(173, 173, 173);
+    font-weight: 400;
+  }
+  .my__info{
+    list-style: none;
+    font-size: 15px;
+  }
+  .my__info strong{
+    color: rgb(173, 173, 173);
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .my__info span{
+    color: white;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .skills__text h2{
+    font-size: 24px;
+    margin-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .skills__text a{
+    text-decoration: none;
+    color: yellow;
+    transition: .5s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .skills__text a:hover{
+    cursor: pointer;
+    color: gold;
+    transition: .5s ease;
+  }
+
+  .resume__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 500px;
+    margin-top: -150px;
+    padding: 10px 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 4px;
+    background: yellow;
+    transition: all 0.25s ease;
+  }
+
+    .resume__button a{
+      text-decoration: none;
+      color: black;
+    }
+    .resume__button:hover{
+      cursor: pointer;
+      background: gold;
+      transition: .25s ease;
+    }
+
+
+  /* Media Queries */
+  @media screen and (max-width: 1000px) {
+    .main__section {
+      padding: 30px;
+    }
+    .main__content {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  
+    .main__image {
+      margin-top: 40px;
+    }
+  
+    .main__container h1 {
+      font-size: 70px;
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    .main__text h2 {
+      font-size: 32px;
+    }
+  
+    .main__img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  /* profile */
+.profile {
+    color: black;
+    position: relative;
+  }
+  
+  .profile__container {
+    background: whitesmoke;
+    padding-top: 100px;
+    padding-left: 60px;
+    height: 1000px;
+  }
+  
+  .profile__header {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 350px 50px 400px;
+  }
+
+  .profile__header img{
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+  }
+
+  .school__icon{
+    margin-top: 75px;
+  }
+
+  .ms__degree__header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    float: left;
+    padding-right: 50px;
+    text-align: left;
+    margin-top: 75px;
+  }
+  
+  .bs__degree__header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    float: left;
+    padding-right: 50px;
+    text-align: left;
+    margin-top: 75px;
+  }
+
+  .hs__degree__header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    float: left;
+    padding-right: 50px;
+    text-align: left;
+    margin-top: 75px;
+  }
+
+  .ms__degree__school{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    float: right;
+    text-align: right;
+    margin-top: 75px;
+  }
+  
+  .bs__degree__school{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    float: right;
+    text-align: right;
+    margin-top: 75px;
+    margin-bottom: -15px;
+  }
+
+  .hs__degree__school{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    float: right;
+    text-align: right;
+    margin-top: 75px;
+    margin-bottom: -50px;
+    margin-right: 25px;
+  }
+  
+  .profile__container h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+    margin-bottom: 20px;
+  }
+  
+  .profile__left {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
+  
+  .profile__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 700px;
+  }
+  
+  .profile__desc h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+ 
+  /* Contact */
+  .contact {
+    display: grid;
+    align-items: center;
+    background: rgb(165, 165, 165);
+    height: 600px;
+    padding: 100px 0;
+    font-weight: bold;
+  }
+  
+  .contact h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    margin-right: 50px;
+  }
+
+  .contact h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #fff;
+    margin-right: 50px;
+  }
+  
+  .contact h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-right: 50px;
+  }
+
+  .how__find{
+    color: white;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 50px;
+  }
+
+  .how__find h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .how__find p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  @media screen and (max-width: 768px) {
+    .contact {
+      flex-direction: column;
+    }
+  
+  
+    .contact h1 {
+      margin-left: 0;
+      margin-top: 24px;
+      font-size: 32px;
+    }
+  }
+  /* Footer */
+  .footer {
+    background: black;
+    color: grey;
+  }
+  
+  .footer__container {
+    padding: 60px;
+    display: grid;
+    justify-content: center;
+    text-align: center
+  }
+   .footer__container h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+   }
+  
+  
+  @media screen and (max-width: 1000px) {
+    .footer__container {
+      padding: 60px 24px;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    
+  }
