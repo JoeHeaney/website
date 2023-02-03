@@ -238,6 +238,7 @@ html{
   
 @media screen and (min-width: 481px) and (max-width: 768px){
   .hero__wrapper {
+    background-size: auto;
     grid-template-rows: 480px;
   }
   
@@ -257,19 +258,22 @@ html{
 
 @media screen and(max-width: 480px){
   .hero__wrapper {
+    background-size: auto;
     grid-template-rows: 480px;
   }
   
   .hero__about span{
-    font-size: 50px;
+    font-size: 35px;
+    text-align: center;
   }
 
   .hero__about h1 {
-    font-size: 25px;
+    font-size: 18px;
+    text-align: center;
   }
 
   .hero__about p {
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
   }
 }
@@ -566,7 +570,7 @@ html{
   }
 
   .main__text h1{
-    font-size: 60px;
+    font-size: 35px;
     
   }
 
@@ -749,7 +753,8 @@ html{
     }
 
     .profile__container h1{
-      font-size: 50px;
+      font-size: 45px;
+      margin-bottom: -15px;
     }
 
     .profile__header{
@@ -758,6 +763,7 @@ html{
       display: grid;
       grid-template-columns:200px 20px 200px;
       column-gap: 20px;
+      
     }
 
     .school__icon i{
@@ -789,7 +795,8 @@ html{
     }
 
     .profile__container h1{
-      font-size: 50px;
+      font-size: 35px;
+      text-align: center;
     }
 
     .profile__header{
@@ -798,6 +805,10 @@ html{
       display: grid;
       grid-template-columns:200px 20px 200px;
       column-gap: 20px;
+    }
+
+    .profile__header h2{
+      font-size: 10px;
     }
 
     .school__icon i{
@@ -816,8 +827,8 @@ html{
     }
 
     .hs__degree__school{
-      margin-left: -50px;
-      margin-right: 50px;
+      margin-left: -60px;
+      margin-right: 60px;
     }
   }
  
@@ -930,7 +941,7 @@ html{
     }
 
     .how__find{
-      grid-template-columns: 100px 100px 100px;
+      grid-template-columns: 75px 75px 75px;
       column-gap: 25px;
       font-size: 12px;
     }
@@ -941,6 +952,10 @@ html{
 
     .my__email h4{
       margin-bottom: 30px;
+    }
+
+    .my__email p{
+      margin-right: 55px;
     }
   }
 
@@ -963,7 +978,7 @@ html{
     }
 
     .how__find{
-      grid-template-columns: 100px 100px 100px;
+      grid-template-columns: 50px 50px 50px;
       column-gap: 25px;
       font-size: 12px;
     }
@@ -975,6 +990,11 @@ html{
     .my__email h4{
       margin-bottom: 30px;
     }
+
+    .my__email p{
+      margin-right: 15px;
+    }
+
   }
 
 
