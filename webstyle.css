@@ -263,7 +263,7 @@ html{
   }
   
   .hero__about span{
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
   }
 
@@ -808,7 +808,11 @@ html{
     }
 
     .profile__header h2{
-      font-size: 10px;
+      font-size: 20px;
+    }
+
+    .profile__header p{
+      font-size: 15px;
     }
 
     .school__icon i{
@@ -978,7 +982,7 @@ html{
     }
 
     .how__find{
-      grid-template-columns: 50px 50px 50px;
+      grid-template-columns: 75px 75px 75px;
       column-gap: 25px;
       font-size: 12px;
     }
