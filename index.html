@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
   <link rel="stylesheet" href="webstyle.css">
-  <script src="https://kit.fontawesome.com/0f6e1b24d9.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="x-icon" href="images/JH.jpg">
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -38,9 +40,9 @@
     <div class="hero__section" id="home">
         <div class="hero__wrapper">
             <div class="hero__about">
-                <span>Joseph Heaney</span>
-                <h1>Software Engineer</h1>
-                <p>I am a senior student at New York Tech and am looking for a working opportunity.</p>
+                <span class="name">Joseph Heaney</span>
+                <h1 class="my_title">Hi there, I'm a <span class="animate"></span></h1>
+                <p>I am a graduate student at New York Institute of Technology and am looking for a working opportunity.</p>
                 <ul class="hero__links">
                   <li class="icon__links">
                     <a href="https://www.linkedin.com/in/joseph-heaney-734524239/" class="linkdin">
@@ -74,8 +76,8 @@
                         Allow me to introduce myself.
                     </h2>
                     <p>
-                       I am currently enrolled at New York Institute of Technology, heading into the spring semester of my senior year.
-                        I am close to finishing my Bachelor's in Electrical and Computer Engineering Technology, and am preparing to start my Master's in Computer Science
+                      I am currently enrolled at New York Institute of Technology, currently in my first semester of my graduate degree.
+                      I've already graduated cum laude with a degree in Electrical and Computer Engineering Technology and I am studying for a master's degree in Computer Science.
                     </p>
                 </div>
                 <div class="skills__text">
@@ -85,7 +87,7 @@
                     </h4>
     
                     <p>
-                     I am currently looking for hire in the software engineering field. 
+                     I am currently looking for hire in the software engineering or data analysis field. 
                     </p>
                     <p>
                       I am open to all types of companies.
@@ -131,16 +133,73 @@
                         <li>
                           JS/REACT
                         </li>
+                        <li>
+                          SQL
+                        </li>
                       </ul>
                   </div>
                 </div>
                 <div class="resume__button">
-                  <a href="documents/Joseph Heaney Resume.pdf">My Resume</a>
+                  <a href="https://drive.google.com/file/d/109GIXTl8guD3_j1fzLrsp0ths-poEGIT/view?usp=drive_link">My Resume</a>
                 </div>
                 <!-- <div class="main__image">
                     <img src="./images/MySelfie.jpeg" alt="face" class = "main__img">
                 </div>-->
             </div>
+        </div>
+    </div>
+
+    <div class="portfolio " id = "portfolio">
+        <div class="portfolio_container">
+           <h1>My Portfolio</h1> 
+           <div class="project_list">
+              <div class="project_container">
+                <div class="project_1" id="project_card">
+                  <h2>VR Headset</h2>
+                  <div class="project_pic"><img src="images/vr.png" alt=""></div>
+                  <div class="project_1_text">
+                    <br>
+                    <br>
+                    <p>A self-made VR Headset from scratch.</p>
+                    <br>
+                    <p>Made with: Arduino, C++, AutoCad, 3D Printing</p>
+                    <br>
+                    <p>Built December 2022</p>
+                  </div>
+                </div>
+                <div class="project_2" id="project_card">
+                  <h2>Portfolio Website</h2>
+                  <div class="project_pic"><img src="images/website.png" alt=""></div>
+                  <div class="project_2_text">
+                    <p>Self designed portfolio website.</p>
+                    <br>
+                    <p>Made with: HTML & CSS</p>
+                    <br>
+                    <p>Built January 2023</p>
+                    <br>
+                  </div>
+                  <div class="project_code" id="p2">
+                    <a href="https://github.com/JoeHeaney/website"><i class="fa-brands fa-github fa-1x"></i> GitHub Code</a>
+                  </div>
+                </div>
+                <div class="project_3" id="project_card">
+                  <h2>B+ Tree Database</h2>
+                  <div class="project_pic"><img src="images/B+Tree.png" alt=""></div>
+                  <div class="project_3_text">
+                    <p>Database constructed using a B+ Tree as foundation.</p>
+                    <br>
+                    <p>Made with Java & Java GUI</p>
+                    <br>
+                    <p> Built April 2023</p>
+                    <br>
+                    <br>
+                  </div>
+                  <div class="project_code" id="p3">
+                    <a href="https://github.com/jcook03266/CSCI-651-Project-B-Tree"><i class="fa-brands fa-github fa-1x"></i> GitHub Code</a>
+                  </div>
+                </div>
+              </div>
+           </div>
         </div>
     </div>
     <!-- Profile Section -->
@@ -158,7 +217,7 @@
               </div>
               <div class="ms__degree__school">
                 <h2>New York Institute of Technology</h2>
-                  <p>Will be studying computer science.</p>
+                  <p>Majoring in Computer Science.</p>
                   <!--<img src="./images/NYIT.jpg" alt="nyit_ny">-->
               </div>
               <div class="bs__degree__header">

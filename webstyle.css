@@ -165,7 +165,7 @@ html{
     align-items: center;
     margin-bottom: 10rem;
   }
-  .hero__about span{
+  .name{
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 90px;
@@ -178,6 +178,11 @@ html{
     font-size: 40px;
     color: white;
     margin-bottom: 1rem;
+  }
+
+  .animate{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .hero__about p {
@@ -206,8 +211,9 @@ html{
     cursor: pointer;
     background-color: transparent;
     color: #ffc910;
+    transform: scale(1.15);
+    transition: all 300ms ease-in-out;
     -webkit-transition: color 300ms ease-in-out;
-    transition: color 300ms ease-in-out;
   }
   
   /* Media Queries */
@@ -412,7 +418,7 @@ html{
     height: 50px;
     width: 150px;
     border-radius: 4px;
-    background: yellow;
+    background: white;
     transition: all 0.25s ease;
   }
 
@@ -423,7 +429,9 @@ html{
     .resume__button:hover{
       cursor: pointer;
       background: gold;
+      transform: scale(1.15);
       transition: .25s ease;
+
     }
 
 
@@ -606,7 +614,78 @@ html{
   }
 }
 
-  
+  /* portfolio */
+
+.portfolio{
+  background-color: lightblue;
+  position: relative;
+}
+
+.portfolio_container{
+  padding-top: 100px;
+  padding-left: 60px;
+  height: 1000px;
+}
+
+.portfolio_container h1{
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  margin-right: 100px;
+  padding-bottom: 50px;
+}
+
+.project_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project_container h2{
+  padding-top: 15px;
+}
+
+#project_card{
+  margin: 2rem;
+  width: 75%;
+  height: 100%;
+  background-color: rgb(156, 228, 233);
+  border-radius: 20px;
+  text-align: center;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.project_pic img{
+  padding: 25px;
+  width: 75%;
+}
+
+.project_code a{
+  padding: 7.5px;
+  height: 7.5%;
+  width: 35%;
+  background-color: rgb(15, 139, 139);
+  border-radius: 25px;
+  text-decoration: none;
+  justify-content: center;
+  transition: 0.5s ease;
+  color: #fff;
+  font-style: bold;
+}
+
+#p2{
+  margin-top: 222px;
+  margin-bottom: -250px;
+}
+
+.project_code a:hover{
+  background-color: rgb(243, 232, 232);
+  cursor: pointer;
+  color: rgb(15, 139, 139);
+}
+
 
   /* profile */
 .profile {
@@ -618,7 +697,7 @@ html{
     background: whitesmoke;
     padding-top: 100px;
     padding-left: 60px;
-    height: 1000px;
+    height: 700px;
   }
   
   .profile__header {
