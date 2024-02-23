@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="webstyle.css">
   <link rel="shortcut icon" type="x-icon" href="images/JH.jpg">
   <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script src="https://use.fontawesome.com/a53bfad264.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -25,13 +26,16 @@
           <a href="#home" class="navbar__links" id="home-page">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="#about" class="navbar__links" id="about-page">About Me</a>
+          <a href="#about" class="navbar__links" id="about-page">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="navbar__links" id="portfolio-page">Projects</a>
         </li>
         <li class="navbar__item">
           <a href="#profile" class="navbar__links" id="skills-page">Education</a>
         </li>
         <li class="navbar__item">
-          <a href="#contact" class="navbar__links" id="contact-page">Contact Me</a>
+          <a href="#contact" class="navbar__links" id="contact-page">Contact</a>
         </li>
       </ul>
     </div>
@@ -46,17 +50,17 @@
                 <ul class="hero__links">
                   <li class="icon__links">
                     <a href="https://www.linkedin.com/in/joseph-heaney-734524239/" class="linkdin">
-                      <i class="fa-brands fa-linkedin-in fa-3x"></i>
+                      <i class="fa fa-brands fa-linkedin fa-3x"></i>
                     </a>
                   </li>
                   <li class="icon__links">
                     <a href="mailto:joseph.e.heaney@gmail.com" class="gmail">
-                      <i class="fa-regular fa-envelope fa-3x"></i>
+                      <i class="fa fa-regular fa-envelope fa-3x"></i>
                     </a>
                   </li>
                   <li class="icon__links">
                     <a href="https://github.com/JoeHeaney" class="github">
-                      <i class="fa-brands fa-github fa-3x"></i>
+                      <i class="fa fa-brands fa-github fa-3x"></i>
                     </a>
                   </li>
                 </ul>
@@ -149,120 +153,100 @@
         </div>
     </div>
 
-    <div class="portfolio " id = "portfolio">
-        <div class="portfolio_container">
-           <h1>My Portfolio</h1> 
-           <div class="project_list">
-              <div class="project_container">
-                <div class="project_1" id="project_card">
-                  <h2>VR Headset</h2>
-                  <div class="project_pic"><img src="images/vr.png" alt=""></div>
-                  <div class="project_1_text">
-                    <br>
-                    <br>
-                    <p>A self-made VR Headset from scratch.</p>
-                    <br>
-                    <p>Made with: Arduino, C++, AutoCad, 3D Printing</p>
-                    <br>
-                    <p>Built December 2022</p>
-                  </div>
-                </div>
-                <div class="project_2" id="project_card">
-                  <h2>Portfolio Website</h2>
-                  <div class="project_pic"><img src="images/website.png" alt=""></div>
-                  <div class="project_2_text">
-                    <p>Self designed portfolio website.</p>
-                    <br>
-                    <p>Made with: HTML & CSS</p>
-                    <br>
-                    <p>Built January 2023</p>
-                    <br>
-                  </div>
-                  <div class="project_code" id="p2">
-                    <a href="https://github.com/JoeHeaney/website"><i class="fa-brands fa-github fa-1x"></i> GitHub Code</a>
-                  </div>
-                </div>
-                <div class="project_3" id="project_card">
-                  <h2>B+ Tree Database</h2>
-                  <div class="project_pic"><img src="images/B+Tree.png" alt=""></div>
-                  <div class="project_3_text">
-                    <p>Database constructed using a B+ Tree as foundation.</p>
-                    <br>
-                    <p>Made with Java & Java GUI</p>
-                    <br>
-                    <p> Built April 2023</p>
-                    <br>
-                    <br>
-                  </div>
-                  <div class="project_code" id="p3">
-                    <a href="https://github.com/jcook03266/CSCI-651-Project-B-Tree"><i class="fa-brands fa-github fa-1x"></i> GitHub Code</a>
-                  </div>
-                </div>
-              </div>
-           </div>
-        </div>
+
+
+    <div class="project" id="projects">
+      <div class="project_containers">
+        <input type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="card">
+          <div class="row">
+            <div class="icon">1</div>
+            <div class="title">
+              <h4>VR Headset</h4>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide" id="c2" checked>
+        <label for="c2" class="card">
+          <div class="row">
+            <div class="icon">2</div>
+            <div class="title">
+              <h4>Portfolio Website</h4>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide" id="c3" checked>
+        <label for="c3" class="card">
+          <div class="row">
+            <div class="icon">3</div>
+            <div class="title">
+              <h4>B+ Tree Database</h4>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide" id="c4" checked>
+        <label for="c4" class="card">
+          <div class="row">
+            <div class="icon">4</div>
+            <div class="title">
+              <h4>Minecraft Mods Search Engine</h4>
+            </div>
+          </div>
+          </div>
+        </label>
+      </div>
     </div>
+
+    
     <!-- Profile Section -->
     <div class="profile" id = "profile">
-        <div class="profile__container">
-            <h1>My Education</h1>
-            <!--Change to Education & Experience after summer-->
-            <div class="profile__header">
-              <div class="ms__degree__header">
-                <h2>Master's Degree</h2>
-                  <p>September 2022 - June 2024</p>
-              </div>
-              <div class="school__icon">
-                <i class="fa-sharp fa-solid fa-school fa-2x"></i>
-              </div>
-              <div class="ms__degree__school">
-                <h2>New York Institute of Technology</h2>
-                  <p>Majoring in Computer Science.</p>
-                  <!--<img src="./images/NYIT.jpg" alt="nyit_ny">-->
-              </div>
-              <div class="bs__degree__header">
-                <h2> Bachelor Degree</h2>
-                  <p>September 2019 - June 2023</p>
-              </div>
-              <div class="school__icon">
-                <i class="fa-sharp fa-solid fa-school fa-2x"></i>
-              </div>
-              <div class="bs__degree__school">
-                <h2>New York Institute of Technology</h2>
-                  <p>Majoring in Electrical & Computer Engineering Technology.</p>
-                  <!--<img src="./images/NYIT_LOGO.png" alt="nyit">-->
-              </div>
-              <div class="hs__degree__header">
-                  <h2>High School Degree</h2>
-                    <p>September 2015 - June 2019</p>
-              </div>
-              <div class="school__icon">
-                <i class="fa-sharp fa-solid fa-school fa-2x"></i>
-              </div>
-              <div class="hs__degree__school">
-                  <h2>North Shore Hebrew Academy High School</h2>
-                  <!--<img src="./images/North_Shore.png" alt="nshahs">-->
-              </div>
-                <!--<div class="profile__left">
-                    <div class="profile__content">
-                        <div class="profile__desc">
-                            Experience will go here eventually
-                        </div>
-                    </div>
-                </div>-->
+      <div class="profile__container">
+          <h1>My Education</h1>
+          <!--Change to Education & Experience after summer-->
+          <div class="profile__header">
+            <div class="hs__degree" id="school">
+              <h2>High School Degree</h2>
+              <br>
+              <h3>North Shore Hebrew Academy High School</h3>
+              <br>
+              <br>
+              <br>
+              <p>September 2015 - June 2019</p>
             </div>
-        </div>
-    </div>
-    
+
+            <div class="bs__degree" id="school">
+              <h2> Bachelor Degree</h2>
+              <br>
+              <h3>New York Institute of Technology</h3>
+              <br>
+              <h4>Major: Electrical & Computer Engineering Technology.</h4>
+              <br>
+              <p>September 2019 - June 2023</p>
+            </div>
+
+            <div class="ms__degree" id="school">
+              <h2>Master's Degree</h2>
+              <br>
+              <h3>New York Institute of Technology</h3>
+              <br>
+              <h4>Major: Computer Science.</h4>
+              <br>
+              <br>
+              <p>September 2022 - June 2024</p>
+            </div>
+          </div>
+      </div>
+  </div>
     <!-- Contact Section -->
     <div class="contact" id="contact">
       <h1>Contact Me</h1>
-      <h2>I'd Love To Get In Touch With You.</h2>
-      <h3>You can find me through these methods.</h3>
+      <h2>I'd Love To Get In Touch With You</h2>
+      <br>
+      <h3>You can find me through these methods:</h3>
       <ul class="how__find">
         <li>
-          <div class="my__location">
-            <i class="fa-solid fa-location-arrow fa-3x"></i>
+          <div class="my__location" id="method">
+            <i class="fa fa-solid fa-location-arrow fa-3x"></i>
             <h4>My Address</h4>
             <p>1907 East 22nd st</p>
             <p>Brooklyn, NY</p>
@@ -270,15 +254,15 @@
          </div>
         </li>
         <li>
-          <div class="my__number">
-            <i class="fa-solid fa-phone fa-3x"></i>
+          <div class="my__number" id="method">
+            <i class="fa fa-solid fa-phone fa-3x"></i>
             <h4>My Phone Number</h4>
             <p>(917) 288-8882</p>
           </div>
         </li>
         <li>
-          <div class="my__email">
-            <i class="fa-regular fa-envelope fa-3x"></i>
+          <div class="my__email" id="method">
+            <i class="fa fa-regular fa-envelope fa-3x"></i>
             <h4>My Email</h4>
             <p>joseph.e.heaney@gmail.com</p>
           </div>

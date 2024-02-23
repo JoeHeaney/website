@@ -4,3 +4,4 @@ const typed = new Typed(".animate", {
     backSpeed: 100,
     loop: true,
   });
+
